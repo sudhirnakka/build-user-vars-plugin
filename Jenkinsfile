@@ -1,4 +1,5 @@
 pipeline {
+  agent { label 'Plugin Build' }
   stages {
     stage('compile') {
       steps {
