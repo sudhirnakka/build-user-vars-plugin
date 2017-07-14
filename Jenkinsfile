@@ -4,7 +4,6 @@ pipeline {
   stages {
     stage('compile') {
       steps {
-        currentBuild.description = "#${BUILD_NUMBER}, branch ${BRANCH}"
         sh 'mvn clean install'
       }
     }
