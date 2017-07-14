@@ -1,4 +1,5 @@
 pipeline {
+  currentBuild.description = "#${BUILD_NUMBER}, branch ${BRANCH}"
   agent any
   stages {
     stage('compile') {
